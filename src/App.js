@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Products from "./components/Products";
 import Featured from "./components/Featured";
+import Header from "./components/Header";
 
 const AppLayout = () => {
   return (
-    <div className="app-layout">
-      {/* <Header /> */}
+    <div className="relative">
+      <Header />
       <Outlet />
     </div>
   );
